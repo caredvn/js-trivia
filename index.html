@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="icon" href="assets/img/ponto-de-interrogacao.png" type="image" sizes="16x16">
+    <title>Trivia</title>
+</head>
+<body onload="carregarPergunta()">
+    <header class="cabecalho">
+        <div class="cabecalho__titulo">
+            <img src="assets/img/ponto-de-interrogacao.png" alt="Logo Trivia">
+            <h1>Jogo de Trivia</h1>
+        </div>
+        <div class="cabecalho__pontuacao">
+            <p>Pontuação: <span id="pontuacao">0</span></p>
+        </div>
+    </header>
+    <main class="principal">
+        <div class="principal__pergunta">
+            <h2 id="tema"></h2>
+            <p id="pergunta"></p>
+            <button id="btn-prox" onclick="pularPergunta()">Próxima pergunta</button>
+        </div>
+        <div class="principal__resposta">
+            <button id="btn-0" class="resposta-1" onclick="checarPergunta(0)"></button>
+            <button id="btn-1" class="resposta-2" onclick="checarPergunta(1)"></button>
+            <button id="btn-2" class="resposta-3" onclick="checarPergunta(2)"></button>
+            <button id="btn-3" class="resposta-4" onclick="checarPergunta(3)"></button>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p>Designed por: <span><a href="https://github.com/caredvn" target="_blank">Caren Divino</a></span></p>
+    </footer>
+</body>
+<script src="assets/js/main.js"></script>
+</html>

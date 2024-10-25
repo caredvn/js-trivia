@@ -1,0 +1,36 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+    height: 10vh;
+    border-bottom: 1px solid #B4BAC8;
+}
+
+.cabecalho div {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+}
+
+.cabecalho__titulo {
+    gap: 1em;
+}
+
+.cabecalho__titulo > img {
+    width: 3em;
+}
+
+.cabecalho__titulo > h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+.cabecalho__pontuacao > p > span {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+    .cabecalho__titulo > h1 {
+        display: none;
+    }
+}
