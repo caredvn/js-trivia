@@ -36,15 +36,13 @@ function carregarPergunta() {
     document.getElementById("pergunta").textContent = perguntaObj.pergunta;    
 
     perguntaObj.respostas.forEach((resposta, index) => {
-        const button = document.getElementById(`btn-${index}`);
+        const button = document.getElementById(`resposta-${index}`);
         button.textContent = resposta;
     })
 }
 
 function checarPergunta(perguntaSelecionada) {
     const respostaCorreta = perguntas[indexPergunta].respostaCorreta;
-    // let pontuacao = parseInt(document.getElementById("pontuacao").textContent);
-    // console.log(pontuacao);
 
     if(perguntaSelecionada === respostaCorreta) {
         alert("Correto!");
